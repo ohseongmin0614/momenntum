@@ -1,0 +1,84 @@
+body {  background-color: #34495e;  color: white;  margin: 0;   text-shadow: 1px 1px 10px #000;
+      /*배경에 글자가 묻혀서 글자 테두리*/   
+      -ms-user-select: none;  
+      -moz-user-select: -moz-none;  
+      -khtml-user-select: none;  
+      -webkit-user-select: none;  
+      user-select: none;  /*글자 드래그 금지*/
+    }
+    
+    
+.form,
+.greetings {  display: none;  font-size: 40px;} 
+.showing {  display: block;} 
+
+@keyframes fadeIn {  
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;  
+    }}
+
+.bgImage {
+    position: absolute;
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    z-index: -1;  
+    animation: fadeIn 0.5s linear;
+    } 
+    
+#weather_top {  
+    text-align: right;
+    } 
+
+#mid {  
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    } 
+
+.js-title {
+    font-size: 100px;
+    } 
+
+#input_name {  
+      background-color: transparent;  
+      border: none;
+      color: white;  
+      font-size: 30px;  
+      width: 280px;
+    }
+    
+#input_name::placeholder {  
+    color: white;  
+    text-align: center;} 
+
+    #input_name:focus {  
+        outline: none;
+    } 
+
+#input_todo {  
+    font-size: 20px;  
+    background-color: transparent;  
+    border: none;  
+    color: white;
+    } 
+
+#input_todo::placeholder {  
+    color: white;  
+    text-decoration: underline;  
+    text-align: center;
+    } 
+
+#input_todo:focus {  
+    outline: none;
+    }
+
+.js-toDoList {  
+    list-style: none;  
+    font-weight: bold;
+    }

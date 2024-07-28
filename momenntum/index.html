@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Momentum</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+
+    <div class="row" id="top">
+      <div class="col" id="weather_box">
+        <div class="js-weather" id="weather_top"></div>
+      </div>
+    </div>
+
+    <div class="row" id="mid">
+      <div class="col" id = "main_box">
+      
+        <div class="js-clock">
+          <h1 class="js-title"></h1>
+        </div>
+    
+        <form class="js-form form">
+          <input id="input_name" type="text" placeholder="what is your name?" />
+          
+        </form>
+        <br>
+        <h4 class="js-greetings greetings"></h4>
+        <form class="js-toDoForm">
+          <input id="input_todo" type="text" placeholder="Write a to do here" />
+        </form>
+    
+        <ul class="js-toDoList"></ul>
+    
+      </div>
+    </div>
+
+
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="background.js"></script>
+    <script src="weather.js"></script>
+
+  </body>
+</html>
